@@ -1,16 +1,18 @@
-public class Waiter {
+class Waiter {
 
     private PizzaBuilder pizzaBuilder;
 
-    public void setPizzaBuilder(PizzaBuilder pizzaBuilder) {
+    void setPizzaBuilder(PizzaBuilder pizzaBuilder) {
         this.pizzaBuilder = pizzaBuilder;
     }
 
-    public Pizza getPizza(){
+    Pizza getPizza(){
        return pizzaBuilder.getPizza();
     }
 
-    public void constructPizza(){
+
+    void constructPizza(){
+        pizzaBuilder.createPizza();
         pizzaBuilder.buildDough();
         pizzaBuilder.buildSauce();
         pizzaBuilder.buildToppings();

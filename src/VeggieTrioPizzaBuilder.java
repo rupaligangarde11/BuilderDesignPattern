@@ -1,4 +1,4 @@
-public class VeggieTrioPizzaBuilder extends PizzaBuilder{
+class VeggieTrioPizzaBuilder extends PizzaBuilder{
 
     @Override
     public void buildDough() {

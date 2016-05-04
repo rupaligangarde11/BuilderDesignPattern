@@ -5,7 +5,13 @@ public class BuilderDemo {
         PizzaBuilder magarithaPizzaBuilder = new MagarithaPizzaBuilder();
         waiter.setPizzaBuilder(magarithaPizzaBuilder);
         waiter.constructPizza();
-        Pizza pizza = waiter.getPizza();
+        Pizza magarithaPizza = waiter.getPizza();
+
+
+        PizzaBuilder vaggieTrioPizzaBuilder =new VeggieTrioPizzaBuilder();
+        waiter.setPizzaBuilder(vaggieTrioPizzaBuilder);
+        waiter.constructPizza();
+        Pizza vaggieTrioPizza = waiter.getPizza();
 
     }
 }

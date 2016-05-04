@@ -1,4 +1,4 @@
-public class MagarithaPizzaBuilder extends PizzaBuilder {
+class MagarithaPizzaBuilder extends PizzaBuilder {
     @Override
     public void buildDough() {
         pizza.setDough("cross");

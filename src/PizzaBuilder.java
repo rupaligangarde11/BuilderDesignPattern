@@ -1,11 +1,16 @@
 abstract class PizzaBuilder {
-    protected Pizza pizza;
+    Pizza pizza;
 
     Pizza getPizza(){
-      return new Pizza();
+        return pizza;
     }
 
     public abstract void buildDough();
     public abstract void buildSauce();
     public abstract void buildToppings();
+
+    void createPizza(){
+        pizza = new Pizza();
+    }
+
 }
